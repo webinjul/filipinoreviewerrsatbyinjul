@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="fil">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grade 9 & 10 Filipino | RSAT Reviewer</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%236b4226'/%3E%3Cpath d='M50 30 C38 20 23 23 15 28 L15 70 C28 64 40 67 50 76 C60 67 72 64 85 70 L85 28 C77 23 62 20 50 30Z' fill='%23fff1d6' stroke='%23d6a75c' stroke-width='4' stroke-linejoin='round'/%3E%3Cpath d='M50 30 V76' stroke='%23d6a75c' stroke-width='3'/%3E%3C/svg%3E">
+
+<style>
+:root {
+  --dark:#49301f;
+  --brown:#795333;
+  --medium:#a17b4f;
+  --light:#e8d6b9;
+  --cream:#fffaf1;
+  --paper:#f5ead8;
+  --text:#392b20;
+  --green:#55734c;
+  --red:#a94c3c;
+}
+* {box-sizing:border-box;scroll-behavior:smooth}
+body {
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:var(--paper);
+  color:var(--text);
+  line-height:1.65;
+}
+header {
+  background:linear-gradient(135deg,#49301f,#795333);
+  color:white;
+  text-align:center;
+  padding:38px 18px 28px;
+}
+header h1 {
+  margin:0;
+  font-size:clamp(27px,5vw,42px);
+}
+header p {margin:5px 0}
+header .school {font-weight:bold;margin-top:12px}
+header .tagline {font-style:italic;color:#f1dfc4;margin-top:15px}
+.topline {
+  width:85px;height:4px;background:#dfbd8e;
+  margin:16px auto;border-radius:5px;
+}
+main {max-width:1050px;margin:auto;padding:20px}
+.motivation {
+  background:#fff4df;
+  border-left:6px solid var(--medium);
+  border-radius:10px;
+  padding:18px 22px;
+  margin:20px 0;
+  box-shadow:0 3px 9px #0000000c;
+}
+.motivation h2 {margin:0 0 7px;color:var(--dark)}
+nav {
+  display:flex;flex-wrap:wrap;gap:9px;
+  justify-content:center;margin:22px 0;
+}
+nav a {
+  background:var(--brown);color:white;
+  text-decoration:none;padding:9px 14px;
+  border-radius:7px;font-size:14px;
+}
+nav a:hover {background:var(--dark)}
+.searchbox {
+  background:white;padding:16px;border-radius:10px;
+  box-shadow:0 2px 8px #0000000c;margin:20px 0;
+}
+.searchbox input {
+  width:100%;padding:13px;border:1px solid #cbb18c;
+  border-radius:7px;font-size:16px;
+}
+.notice {
+  background:#f1e2c9;border:1px solid #d4b88e;
+  border-radius:10px;padding:16px;margin:20px 0;
+}
+.section {
+  background:var(--cream);padding:23px;
+  border-radius:13px;margin:25px 0;
+  box-shadow:0 3px 12px #0000000c;
+}
+.section h2 {
+  color:var(--dark);border-bottom:3px solid var(--light);
+  padding-bottom:10px;
+}
+.quarter-title {
+  color:var(--brown);margin-top:28px;
+  border-bottom:1px solid #ddc7a7;padding-bottom:7px;
+}
+.lesson {
+  background:white;border:1px solid #e1cfb4;
+  border-radius:9px;margin:12px 0;overflow:hidden;
+}
+.lesson summary {
+  cursor:pointer;padding:14px 17px;
+  font-weight:bold;color:var(--dark);
+  background:#f8efdf;
+}
+.lesson summary:hover {background:#efe0c8}
+.lesson-content {padding:16px 19px}
+.lesson-content h4 {color:var(--brown);margin-bottom:5px}
+.lesson-content ul {padding-left:22px}
+.lesson-content li {margin:5px 0}
+.example {
+  background:#f7eddf;border-left:4px solid var(--medium);
+  padding:11px 14px;margin:12px 0;border-radius:5px;
+}
+.quiz-intro {
+  background:#f2e4ce;padding:13px 16px;
+  border-radius:8px;margin:15px 0;
+}
+.question {
+  background:white;border:1px solid #dfc9a5;
+  border-radius:10px;padding:17px;margin:16px 0;
+}
+.question p {margin-top:0}
+.question label {
+  display:block;padding:8px 10px;margin:5px 0;
+  border-radius:6px;cursor:pointer;
+}
+.question label:hover {background:#f3e7d5}
+.question input {accent-color:var(--brown);margin-right:8px}
+button {
+  background:var(--brown);color:white;border:0;
+  padding:12px 20px;border-radius:8px;
+  font-size:15px;font-weight:bold;cursor:pointer;
+  margin:8px 5px 8px 0;
+}
+button:hover {background:var(--dark)}
+.result-box {
+  background:#f8edda;border:2px solid var(--medium);
+  padding:20px;border-radius:12px;margin-top:20px;
+}
+.result-box h2 {border:0;text-align:center;font-size:36px}
+.review-item {
+  background:white;border-radius:8px;
+  padding:15px;margin:13px 0;
+  border-left:6px solid var(--red);
+}
+.review-item.correct {border-left-color:var(--green)}
+.status {font-weight:bold}
+.correct-text {color:var(--green)}
+.wrong-text {color:var(--red)}
+footer {
+  text-align:center;background:var(--dark);
+  color:white;padding:25px 15px;margin-top:35px;
+}
+footer p {margin:5px}
+.backtop {
+  display:block;text-align:center;color:var(--brown);
+  margin:25px 0;font-weight:bold;
+}
+.hidden {display:none!important}
+@media(max-width:600px) {
+  main {padding:12px}
+  header {padding:28px 12px}
+  .section {padding:15px}
+  nav {gap:6px}
+  nav a {font-size:12px;padding:8px 10px}
+  .question {padding:13px}
+  button {width:100%;margin:7px 0}
+}
+</style>
+</head>
+
+<body id="top">
+
+<header>
+  <h1>📚 FILIPINO REVIEWER</h1>
+  <div class="topline"></div>
+  <p>Grade 9 & Grade 10</p>
+  <p><b>RSAT Preparation</b></p>
+  <p>Made by Angel De Guzman Tictic │ 10-Patient</p>
+  <p class="school">Concepcion Integrated School - Secondary Level</p>
+  <p class="tagline">Ang kaalaman ay kayamanang hindi kailanman mananakaw.</p>
+</header>
+
+<main>
+
+<div class="motivation">
+  <h2>🌟 Isang Paalala Bago Magsimula</h2>
+  <p>
+    Hindi kailangang malaman mo agad ang lahat. Ang mahalaga ay patuloy kang
+    natututo, nagsisikap, at nagtitiwala sa iyong kakayahan. Gamitin ang
+    reviewer na ito upang mas mapalawak ang iyong kaalaman at mas mapaghandaan
+    ang RSAT. Kaya mo 'yan, CISian!
+  </p>
+</div>
+
+<nav>
+  <a href="#grade9">Grade 9 Lessons</a>
+  <a href="#grade10">Grade 10 Lessons</a>
+  <a href="#quiz9">Grade 9 Quiz</a>
+  <a href="#quiz10">Grade 10 Quiz</a>
+  <a href="#top">Back to Top ↑</a>
+</nav>
+
+<div class="searchbox">
+  <label for="search"><b>🔎 Hanapin ang isang aralin:</b></label>
+  <input id="search" type="text" placeholder="Halimbawa: Noli Me Tangere, tayutay, nobela...">
+</div>
+
+<div class="notice">
+  <b>📌 Paano Gamitin ang Reviewer na Ito</b>
+  <ul>
+    <li>Pindutin ang pamagat ng aralin upang makita ang paliwanag.</li>
+    <li>Basahin at unawain ang mahahalagang konsepto at halimbawa.</li>
+    <li>Gamitin ang search bar upang mabilis na mahanap ang isang paksa.</li>
+    <li>Sagutan ang mga quiz pagkatapos mag-review.</li>
+    <li>Pagkatapos mag-submit, tingnan ang iyong score at basahin ang paliwanag sa bawat tanong.</li>
+  </ul>
+  <p>
+    <b>Paalala:</b> Ang mga aralin sa Grade 9 ay gabay sa mahahalagang paksang
+    pampanitikan at pangwika. Maaaring magkaiba ang pagkakasunod-sunod o
+    eksaktong saklaw depende sa inyong paaralan at learning materials.
+  </p>
+</div>
+
+<!-- GRADE 9 -->
+<section class="section" id="grade9">
+<h2>📘 GRADE 9 FILIPINO</h2>
+<p>Unang hanggang Ikaapat na Markahan</p>
+
+<h3 class="quarter-title">UNANG MARKAHAN — Panitikang Asyano</h3>
+
+<details class="lesson">
+<summary>1. Panitikan at Panitikang Asyano</summary>
+<div class="lesson-content">
+<h4>Ano ang panitikan?</h4>
+<p>Ang panitikan ay nagpapahayag ng kaisipan, damdamin, karanasan, kultura, at paniniwala ng tao sa pamamagitan ng pasalita o pasulat na paraan.</p>
+<h4>Dalawang anyo ng panitikan</h4>
+<ul>
+<li><b>Patula:</b> Gumagamit ng taludtod, saknong, ritmo, at matalinghagang pananalita.</li>
+<li><b>Prosa:</b> Karaniwang gumagamit ng mga talata at pangungusap.</li>
+</ul>
+<h4>Panitikang Asyano</h4>
+<p>Mga akdang nagmula sa iba't ibang bansa sa Asya na nagpapakita ng kanilang kultura, tradisyon, paniniwala, at pamumuhay.</p>
+<div class="example"><b>Tandaan:</b> Ang panitikan ay salamin ng kultura at pagkakakilanlan ng isang lipunan.</div>
+</div>
+</details>
+
+<details class="lesson">
+<summary>2. Maikling Kuwento</summary>
+<div class="lesson-content">
+<p>Ang maikling kuwento ay isang akdang tuluyan na naglalahad ng isang mahalagang pangyayari sa buhay ng tauhan.</p>
+<h4>Mga elemento</h4>
+<ul>
+<li><b>Banghay:</b> Pagkakasunod-sunod ng mga pangyayari.</li>
+<li><b>Tauhan:</b> Mga gumaganap sa kuwento.</li>
+<li><b>Tagpuan:</b> Panahon at lugar ng pangyayari.</li>
+<li><b>Tunggalian:</b> Suliraning kinakaharap ng tauhan.</li>
+<li><b>Tema:</b> Pangunahing diwa o mensahe.</li>
+<li><b>Pananaw:</b> Pananaw na ginagamit sa pagsasalaysay.</li>
+</ul>
+<h4>Mga bahagi ng banghay</h4>
+<ol>
+<li><b>Simula:</b> Ipinakikilala ang tauhan at tagpuan.</li>
+<li><b>Gitna:</b> Umiigting ang suliranin at pangyayari.</li>
+<li><b>Wakas:</b> Nalulutas o naiiwan ang suliranin.</li>
+</ol>
+<div class="example"><b>Halimbawa:</b> Isang batang nagsisikap mag-aral sa kabila ng kahirapan. Maaaring maging tema nito ang pagtitiyaga at pag-asa.</div>
+</div>
+</details>
+
+<details class="lesson">
+<summary>3. Nobela</summary>
+<div class="lesson-content">
+<p>Ang nobela ay isang mahabang akdang tuluyan na naglalahad ng masalimuot na pangyayari at mas malawak na pag-unlad ng mga tauhan.</p>
+<h4>Katangian</h4>
+<ul>
+<li>Maraming tauhan at pangyayari.</li>
+<li>May malawak na paglalarawan ng lipunan.</li>
+<li>Maaaring tumalakay sa kasaysayan, politika, pag-ibig, at iba pang usapin.</li>
+<li>May mga kabanata na magkakaugnay.</li>
+</ul>
+<h4>Pagkakaiba sa maikling kuwento</h4>
+<p>Mas mahaba at mas malawak ang nobela. Samantala, nakatuon ang maikling kuwento sa isang pangunahing pangyayari o suliranin.</p>
+</div>
+</details>
+
+<details class="lesson">
+<summary>4. Tula</summary>
+<div class="lesson-content">
+<p>Ang tula ay isang anyo ng panitikan na nagpapahayag ng damdamin, kaisipan, at karanasan sa masining na paraan.</p>
+<h4>Mga elemento ng tula</h4>
+<ul>
+<li><b>Saknong:</b> Pangkat ng mga taludtod.</li>
+<li><b>Taludtod:</b> Bawat linya ng tula.</li>
+<li><b>Sukat:</b> Bilang ng pantig sa bawat taludtod.</li>
+<li><b>Tugma:</b> Pagkakatulad ng tunog sa hulihan ng mga taludtod.</li>
+<li><b>Persona:</b> Nagsasalita sa tula.</li>
+<li><b>Talinghaga:</b> Malalim o di-tuwirang kahulugan.</li>
+</ul>
+<div class="example">Ang tula ay hindi lamang tungkol sa tugma. Mahalaga rin ang mensahe at damdaming ipinahahayag nito.</div>
+</div>
+</details>
+
+<details class="lesson">
+<summary>5. Sanaysay at Dula</summary>
+<div class="lesson-content">
+<h4>Sanaysay</h4>
+<p>Isang akdang tuluyan na nagpapahayag ng opinyon, karanasan, o pananaw tungkol sa isang paksa.</p>
+<ul>
+<li><b>Pormal:</b> Maingat, seryoso, at mas sistematiko ang paglalahad.</li>
+<li><b>Di-pormal:</b> Mas personal, magaan, at malaya ang paraan ng pagsulat.</li>
+</ul>
+<h4>Dula</h4>
+<p>Isang akdang pampanitikan na isinasadula o itinatanghal sa harap ng mga manonood.</p>
+<ul>
+<li><b>Dayalogo:</b> Palitan ng mga pahayag ng tauhan.</li>
+<li><b>Yugto:</b> Malaking bahagi ng dula.</li>
+<li><b>Tagpo:</b> Bahagi ng isang yugto.</li>
+<li><b>Tanghalan:</b> Lugar kung saan itinatanghal ang dula.</li>
+</ul>
+</div>
+</details>
+
+<h3 class="quarter-title">IKALAWANG MARKAHAN — Panitikan ng Silangang Asya</h3>
+
+<details class="lesson">
+<summary>6. Haiku at Tanka</summary>
+<div class="lesson-content">
+<h4>Haiku</h4>
+<p>Isang maikling tulang nagmula sa Japan na karaniwang tumatalakay sa kalikasan at isang sandali ng buhay.</p>
+<ul><li>Tradisyonal na sukat: 5-7-5 pantig.</li><li>May tatlong taludtod.</li></ul>
+<h4>Tanka</h4>
+<p>Isang tulang Hapones na karaniwang nagpapahayag ng damdamin at karanasan.</p>
+<ul><li>Tradisyonal na sukat: 5-7-5-7-7 pantig.</li><li>May limang taludtod.</li></ul>
+<div class="example"><b>Memory tip:</b> Haiku = 3 taludtod. Tanka = 5 taludtod.</div>
+</div>
+</details>
+
+<details class="lesson">
+<summary>7. Pabula</summary>
+<div class="lesson-content">
+<p>Ang pabula ay isang uri ng kuwento kung saan ang mga hayop o bagay ay binibigyan ng katangiang pantao.</p>
+<h4>Katangian</h4>
+<ul>
+<li>Gumagamit ng mga hayop bilang tauhan.</li>
+<li>May aral o mensaheng nais ipabatid.</li>
+<li>Maaaring tumalakay sa kabutihan, kasakiman, katapatan, at pagkakaibigan.</li>
+</ul>
+<div class="example"><b>Halimbawa:</b> Ang pagong at matsing. Maaaring ipakita nito ang kahalagahan ng talino at pag-iingat.</div>
+</div>
+</details>
+
+<details class="lesson">
+<summary>8. Talumpati</summary>
+<div class="lesson-content">
+<p>Ang talumpati ay isang pormal na pagpapahayag ng kaisipan o paninindigan sa harap ng mga tagapakinig.</p>
+<h4>Mga bahagi</h4>
+<ul>
+<li><b>Panimula:</b> Pagkuha ng atensiyon at pagpapakilala sa paksa.</li>
+<li><b>Katawan:</b> Paglalahad ng pangunahing ideya at mga patunay.</li>
+<li><b>Wakas:</b> Pagbibigay-diin sa mensahe at panghihikayat.</li>
+</ul>
+<h4>Mga uri ayon sa layunin</h4>
+<ul>
+<li>Impormatibo — nagbibigay-kaalaman.</li>
+<li>Mapanghikayat — nanghihikayat o nangangatwiran.</li>
+<li>Nagbibigay-aliw — naglalayong magbigay ng kasiyahan.</li>
+</ul>
+</div>
+</details>
+
+<details class="lesson">
+<summary>9. Pangangatwiran</summary>
+<div class="lesson-content">
+<p>Ang pangangatwiran ay pagpapaliwanag at pagtatanggol sa isang paninindigan gamit ang lohika at ebidensiya.</p>
+<h4>Mahahalagang bahagi</h4>
+<ul>
+<li><b>Pahayag:</b> Ideya o paninindigang ipinagtatanggol.</li>
+<li><b>Patunay:</b> Ebidensiyang sumusuporta sa pahayag.</li>
+<li><b>Pangangatwiran:</b> Lohikal na pagpapaliwanag kung bakit kapani-paniwala ang pahayag.</li>
+</ul>
+<div class="example"><b>Halimbawa:</b> Dapat magkaroon ng sapat na aklat sa paaralan dahil nakatutulong ang mga ito sa pagkatuto ng mga mag-aaral.</div>
+</div>
+</details>
+
+<h3 class="quarter-title">IKATLONG MARKAHAN — Wika at Pagsusuri</h3>
+
+<details class="lesson">
+<summary>10. Sanhi at Bunga</summary>
+<div class="lesson-content">
+<p>Ang sanhi ay dahilan kung bakit nangyari ang isang pangyayari. Ang bunga naman ay resulta nito.</p>
+<ul>
+<li><b>Sanhi:</b> Dahil sa malakas na ulan.</li>
+<li><b>Bunga:</b> Nagkaroon ng pagbaha.</li>
+</ul>
+<h4>Mga salitang nagpapakita ng ugnayan</h4>
+<p>Dahil, sapagkat, kaya, bunga nito, dulot nito, at resulta nito.</p>
+<div class="example">Dahil sa kakulangan ng tulog, nahirapan siyang magpokus sa klase. Sanhi: kakulangan ng tulog. Bunga: hirap sa pagtuon ng pansin.</div>
+</div>
+</details>
+
+<details class="lesson">
+<summary>11. Pang-ugnay</summary>
+<div class="lesson-content">
+<p>Ang pang-ugnay ay mga salitang nagdurugtong sa mga salita, parirala, sugnay, o pangungusap.</p>
+<ul>
+<li><b>Pangatnig:</b> At, ngunit, subalit, dahil, sapagkat, o.</li>
+<li><b>Pang-angkop:</b> Na, -ng, -g.</li>
+<li><b>Pang-ukol:</b> Sa, ng, para sa, tungkol sa.</li>
+</ul>
+<div class="example">
+Matalino <b>at</b> masipag ang mag-aaral.<br>
+Mabait <b>na</b> bata.<br>
+Nag-aral siya <b>dahil</b> may pagsusulit.
+</div>
+</div>
+</details>
+
+<details class="lesson">
+<summary>12. Tayutay</summary>
+<div class="lesson-content">
+<p>Ang tayutay ay masining na paggamit ng mga salita upang maging mas mabisa at makulay ang pagpapahayag.</p>
+<ul>
+<li><b>Pagtutulad:</b> Paghahambing gamit ang tulad, parang, gaya, at kawangis.</li>
+<li><b>Pagwawangis:</b> Tuwirang paghahambing na walang tulad o parang.</li>
+<li><b>Pagsasatao:</b> Pagbibigay ng katangiang pantao sa bagay o hayop.</li>
+<li><b>Pagmamalabis:</b> Sadyang pagpapalabis ng pahayag.</li>
+<li><b>Pagtawag:</b> Pakikipag-usap sa isang bagay, tao, o ideyang wala sa harapan.</li>
+<li><b>Pagtanggi:</b> Pahayag na gumagamit ng tila pagtanggi ngunit nagpapahiwatig ng kabaligtaran.</li>
+</ul>
+<div class="example">
+Pagtutulad: Ang kaniyang mukha ay parang buwan.<br>
+Pagwawangis: Siya ay ilaw ng tahanan.<br>
+Pagsasatao: Sumayaw ang mga dahon.<br>
+Pagmamalabis: Isang libong taon kitang hinintay.
+</div>
+</div>
+</details>
+
+<details class="lesson">
+<summary>13. Idyoma</summary>
+<div class="lesson-content">
+<p>Ang idyoma ay pariralang may kahulugang hindi literal o hindi direktang makukuha sa mga salitang bumubuo rito.</p>
+<ul>
+<li><b>Bukas-palad:</b> Matulungin o mapagbigay.</li>
+<li><b>Balat-sibuyas:</b> Madaling masaktan.</li>
+<li><b>Taingang-kawali:</b> Nagbibingi-bingihan.</li>
+<li><b>Ilaw ng tahanan:</b> Ina.</li>
+<li><b>Makapal ang mukha:</b> Walang hiya.</li>
+<li><b>Butas ang bulsa:</b> Walang pera.</li>
+</ul>
+</div>
+</details>
+
+<details class="lesson">
+<summary>14. Talata at Pag-unawa sa Binasa</summary>
+<div class="lesson-content">
+<h4>Uri ng talata ayon sa layunin</h4>
+<ul>
+<li><b>Pasalaysay:</b> Nagsasaad ng pangyayari.</li>
+<li><b>Paglalarawan:</b> Nagbibigay ng detalye tungkol sa tao, bagay, lugar, o pangyayari.</li>
+<li><b>Paglalahad:</b> Nagpapaliwanag o nagbibigay ng impormasyon.</li>
+<li><b>Argumentatibo:</b> Nangangatwiran at nagtatanggol ng paninindigan.</li>
+</ul>
+<h4>Mga dapat tandaan sa pagbasa</h4>
+<ul>
+<li>Tukuyin ang pangunahing ideya.</li>
+<li>Hanapin ang mga pantulong na detalye.</li>
+<li>Unawain ang kahulugan ng salita batay sa konteksto.</li>
+<li>Gumawa ng hinuha mula sa mga pahiwatig.</li>
+<li>Tukuyin ang layunin at pananaw ng may-akda.</li>
+</ul>
+</div>
+</details>
+
+<h3 class="quarter-title">IKAAPAT NA MARKAHAN — Noli Me Tangere</h3>
+
+<details class="lesson">
+<summary>15. Jose Rizal at ang Noli Me Tangere</summary>
+<div class="lesson-content">
+<p>Ang <b>Noli Me Tangere</b> ay nobelang isinulat ni Dr. Jose Rizal na tumatalakay sa mga suliranin ng lipunang Pilipino noong panahon ng Espanyol.</p>
+<ul>
+<li>Inilathala noong 1887 sa Berlin, Germany.</li>
+<li>Layunin nitong ilantad ang pang-aabuso at kawalang-katarungan sa lipunan.</li>
+<li>Ang pamagat ay Latin na nangangahulugang “Huwag Mo Akong Salingin.”</li>
+</ul>
+<h4>Mahahalagang ideya</h4>
+<ul>
+<li>Kolonyalismo at pang-aabuso sa kapangyarihan.</li>
+<li>Diskriminasyon at kawalan ng katarungan.</li>
+<li>Kahalagahan ng edukasyon at pagbabago.</li>
+<li>Pagmamahal sa bayan.</li>
+</ul>
+</div>
+</details>
+
+<details class="lesson">
+<summary>16. Mahahalagang Tauhan sa Noli Me Tangere</summary>
+<div class="lesson-content">
+<ul>
+<li><b>Crisostomo Ibarra:</b> Binatang nag-aral sa Europa at nagnanais ng mapayapang pagbabago.</li>
+<li><b>Maria Clara:</b> Kasintahan ni Ibarra; anak ni Padre Damaso at ni Doña Pia Alba.</li>
+<li><b>Elias:</b> Tumutulong kay Ibarra at may malalim na pag-unawa sa suliranin ng lipunan.</li>
+<li><b>Padre Damaso:</b> Prayleng mapang-abuso at tunay na ama ni Maria Clara.</li>
+<li><b>Padre Salvi:</b> Prayleng may lihim na pagnanasa kay Maria Clara.</li>
+<li><b>Pilosopo Tasyo:</b> Kilala sa kaniyang malalim na pag-iisip at mga pananaw.</li>
+<li><b>Sisa:</b> Ina nina Basilio at Crispin na nakaranas ng matinding paghihirap.</li>
+<li><b>Basilio:</b> Anak ni Sisa na nakaligtas sa mga pangyayari.</li>
+<li><b>Crispin:</b> Nakababatang kapatid ni Basilio na napagbintangan ng pagnanakaw.</li>
+<li><b>Kapitan Tiago:</b> Mayamang taong kumupkop kay Maria Clara.</li>
+<li><b>Don Rafael Ibarra:</b> Ama ni Crisostomo Ibarra.</li>
+</ul>
+</div>
+</details>
+
+<details class="lesson">
+<summary>17. Mahahalagang Pangyayari at Tema</summary>
+<div class="lesson-content">
+<h4>Mahahalagang pangyayari</h4>
+<ul>
+<li>Pagbabalik ni Ibarra sa Pilipinas.</li>
+<li>Pagkakatuklas niya sa sinapit ng kaniyang ama.</li>
+<li>Mga pagtatangka niyang magpatayo ng paaralan.</li>
+<li>Mga suliraning kinaharap niya dahil sa mga makapangyarihan.</li>
+<li>Ang pagkakahiwalay nina Ibarra at Maria Clara.</li>
+<li>Ang pagtakas ni Ibarra sa tulong ni Elias.</li>
+</ul>
+<h4>Mga pangunahing tema</h4>
+<ul>
+<li>Pagmamahal sa bayan.</li>
+<li>Pagkakapantay-pantay at katarungan.</li>
+<li>Pag-abuso sa kapangyarihan.</li>
+<li>Kahalagahan ng edukasyon.</li>
+<li>Pag-ibig, pamilya, at sakripisyo.</li>
+</ul>
+</div>
+</details>
+
+</section>
+
+<!-- GRADE 10 -->
+<section class="section" id="grade10">
+<h2>📕 GRADE 10 FILIPINO</h2>
+<p>Unang Markahan — El Filibusterismo</p>
+
+<details class="lesson">
+<summary>1. Kasaysayan ng El Filibusterismo</summary>
+<div class="lesson-content">
+<p>Ang <b>El Filibusterismo</b> ay ikalawang nobela ni Dr. Jose Rizal at karugtong ng Noli Me Tangere.</p>
+<ul>
+<li>Inilathala noong 1891 sa Ghent, Belgium.</li>
+<li>Inialay sa tatlong paring martir na sina Mariano Gomez, Jose Burgos, at Jacinto Zamora.</li>
+<li>Kilala rin bilang GOMBURZA.</li>
+<li>Mas madilim at mas mabigat ang tono nito kaysa sa Noli Me Tangere.</li>
+</ul>
+<h4>Bakit isinulat?</h4>
+<p>Upang ilantad ang pang-aabuso, katiwalian, diskriminasyon, at kawalang-katarungan sa ilalim ng pamahalaang kolonyal.</p>
+<div class="example"><b>Tandaan:</b> Noli Me Tangere = paglalantad ng sakit ng lipunan. El Filibusterismo = mas malalim na pagtalakay sa bunga ng pang-aapi at paghahangad ng pagbabago.</div>
+</div>
+</details>
+
+<details class="lesson">
+<summary>2. Simoun at ang Kaniyang Pagkatao</summary>
+<div class="lesson-content">
+<p>Si Simoun ay ang nagbagong katauhan ni Crisostomo Ibarra mula sa Noli Me Tangere.</p>
+<h4>Mga katangian</h4>
+<ul>
+<li>Mayaman at makapangyarihang mag-aalahas.</li>
+<li>Malapit sa mga taong nasa kapangyarihan.</li>
+<li>Nagtataglay ng matinding galit at paghahangad ng paghihiganti.</li>
+<li>Gumagamit ng kaniyang yaman at impluwensiya upang isulong ang kaniyang plano.</li>
+</ul>
+<h4>Bakit siya nagbago?</h4>
+<p>Dahil sa mga karanasan ng pang-aapi, kabiguan, at pagkawala ng mga taong mahalaga sa kaniya.</p>
+</div>
+</details>
+
+<details class="lesson">
+<summary>3. Mahahalagang Tauhan</summary>
+<div class="lesson-content">
+<ul>
+<li><b>Simoun:</b> Dating Crisostomo Ibarra na nagbalik upang maghiganti.</li>
+<li><b>Basilio:</b> Anak ni Sisa na naging mag-aaral ng medisina.</li>
+<li><b>Isagani:</b> Makata at mag-aaral na may paninindigan.</li>
+<li><b>Kabesang Tales:</b> Magsasakang nakaranas ng pang-aabuso sa lupa.</li>
+<li><b>Juli:</b> Anak ni Kabesang Tales at kasintahan ni Basilio.</li>
+<li><b>Padre Florentino:</b> Pari na kumupkop kay Isagani at nagbigay ng mahahalagang pagninilay sa wakas.</li>
+<li><b>Paulita Gomez:</b> Kasintahan ni Isagani na nagpakasal kay Juanito Pelaez.</li>
+<li><b>Padre Camorra:</b> Prayleng mapang-abuso.</li>
+<li><b>Don Custodio:</b> Taong inatasang magbigay ng pasiya tungkol sa kahilingan ng mga mag-aaral.</li>
+<li><b>Ben Zayb:</b> Mamamahayag na may pagkiling sa kaniyang mga pananaw.</li>
+<li><b>Placido Penitente:</b> Mag-aaral na nawalan ng gana dahil sa sistema ng edukasyon.</li>
+<li><b>Macaraig:</b> Mag-aaral na nanguna sa usapin ng Akademya ng Wikang Kastila.</li>
+</ul>
+</div>
+</details>
+
+<details class="lesson">
+<summary>4. Kabanata 1–5: Sa Ibabaw ng Kubyerta at mga Pangyayari</summary>
+<div class="lesson-content">
+<ul>
+<li><b>Kabanata 1 — Sa Ibabaw ng Kubyerta:</b> Ipinakilala ang Bapor Tabo at ang mga taong nasa mataas na antas ng lipunan.</li>
+<li><b>Kabanata 2 — Sa Ilalim ng Kubyerta:</b> Ipinakita ang kalagayan ng mga karaniwang pasahero.</li>
+<li><b>Kabanata 3 — Mga Alamat:</b> Nagbahagi ng mga kuwento at alamat ang mga tauhan.</li>
+<li><b>Kabanata 4 — Kabesang Tales:</b> Ipinakita ang kawalang-katarungang dinanas ng isang magsasaka.</li>
+<li><b>Kabanata 5 — Ang Noche Buena ng Isang Kutsero:</b> Ipinakita ang pang-aabuso ng mga awtoridad sa karaniwang mamamayan.</li>
+</ul>
+<h4>Pinakamahalagang simbolo</h4>
+<p>Ang Bapor Tabo ay sumasagisag sa lipunang mabagal umusad at sa hindi pantay na kalagayan ng mga tao.</p>
+</div>
+</details>
+
+<details class="lesson">
+<summary>5. Kabanata 6–10: Mga Suliranin ng mga Tauhan</summary>
+<div class="lesson-content">
+<ul>
+<li><b>Kabanata 6:</b> Ipinakita ang kalagayan ni Basilio at ang kaniyang mga pangarap.</li>
+<li><b>Kabanata 7:</b> Muling nagtagpo sina Basilio at Simoun; nalaman ni Basilio ang tunay na pagkatao ni Simoun.</li>
+<li><b>Kabanata 8:</b> Ipinakita ang mga pangyayari sa Pasko at ang kalagayan ni Juli.</li>
+<li><b>Kabanata 9:</b> Inilahad ang mga suliraning dinaranas ng mga mamamayan.</li>
+<li><b>Kabanata 10:</b> Ipinakita ang mga pangyayari sa tahanan at ang kalagayan ni Kabesang Tales.</li>
+</ul>
+<p><b>Pokus:</b> Ang epekto ng pang-aapi sa pamilya, pangarap, at kinabukasan ng mga tao.</p>
+</div>
+</details>
+
+<details class="lesson">
+<summary>6. Kabanata 11–15: Lipunan at Edukasyon</summary>
+<div class="lesson-content">
+<ul>
+<li><b>Kabanata 11:</b> Ipinakita ang mga taong may kapangyarihan sa lipunan.</li>
+<li><b>Kabanata 12:</b> Ipinakilala ang mga mag-aaral at ang kanilang kalagayan.</li>
+<li><b>Kabanata 13:</b> Ipinakita ang suliranin sa edukasyon at ang karanasan ni Placido Penitente.</li>
+<li><b>Kabanata 14:</b> Tinalakay ang usapin ng Akademya ng Wikang Kastila.</li>
+<li><b>Kabanata 15:</b> Ipinakita ang paghingi ng tulong ng mga mag-aaral kay Ginoong Pasta.</li>
+</ul>
+<h4>Akademya ng Wikang Kastila</h4>
+<p>Isang panukala ng mga mag-aaral na magkaroon ng institusyong magtuturo ng wikang Kastila. Ipinakita nito ang kanilang paghahangad ng edukasyon ngunit pati ang mga hadlang na dulot ng kapangyarihan at diskriminasyon.</p>
+</div>
+</details>
+
+<details class="lesson">
+<summary>7. Kabanata 16–20: Mga Pagpapasya at Paninindigan</summary>
+<div class="lesson-content">
+<ul>
+<li><b>Kabanata 16:</b> Ipinakita ang mga pagtitipon at usapin sa lipunan.</li>
+<li><b>Kabanata 17:</b> Inilahad ang mga pananaw at kilos ng mga taong may kapangyarihan.</li>
+<li><b>Kabanata 18:</b> Ipinakita ang mga lihim at paniniwala ng ilang tauhan.</li>
+<li><b>Kabanata 19:</b> Inilahad ang kalagayan ng mga mag-aaral at ang epekto ng sistema sa kanila.</li>
+<li><b>Kabanata 20:</b> Ipinakita ang mga pasiya ng mga taong may impluwensiya sa lipunan.</li>
+</ul>
+<p><b>Pokus:</b> Ang kawalan ng patas na pagkakataon at ang epekto ng mga desisyon ng makapangyarihan.</p>
+</div>
+</details>
+
+<details class="lesson">
+<summary>8. Kabanata 21–30: Paghihiganti at Paglala ng Suliranin</summary>
+<div class="lesson-content">
+<p>Sa mga kabanatang ito, lalong lumilitaw ang mga plano ni Simoun at ang mga epekto ng pang-aapi sa iba't ibang tauhan.</p>
+<ul>
+<li>Patuloy na lumalala ang mga suliranin sa lipunan.</li>
+<li>Nahaharap ang mga tauhan sa mahihirap na pagpili.</li>
+<li>Nagiging mas malinaw ang pagkakaiba ng mga paninindigan.</li>
+<li>Lalong lumalalim ang plano ni Simoun.</li>
+</ul>
+<div class="example"><b>Pag-aralan:</b> Paano nagkakaiba ang paraan ng pagbabago na nais nina Simoun at ng mga mag-aaral?</div>
+</div>
+</details>
+
+<details class="lesson">
+<summary>9. Kabanata 31–39: Wakas ng Nobela</summary>
+<div class="lesson-content">
+<p>Sa huling bahagi ng nobela, umabot sa pinakamahalagang yugto ang plano ni Simoun at ang mga pangyayaring may kaugnayan dito.</p>
+<ul>
+<li>Inihanda ni Simoun ang kaniyang mapanirang plano.</li>
+<li>Naganap ang mahalagang pangyayari kaugnay ng lampara.</li>
+<li>Nagkaroon ng mga desisyong nakaapekto sa kinabukasan ng mga tauhan.</li>
+<li>Nasira ang plano ni Simoun.</li>
+<li>Humingi siya ng tulong kay Padre Florentino.</li>
+<li>Nagkaroon ng pagninilay tungkol sa tunay na kalayaan at pagbabago.</li>
+</ul>
+</div>
+</details>
+
+<details class="lesson">
+<summary>10. Mahahalagang Simbolismo sa El Filibusterismo</summary>
+<div class="lesson-content">
+<ul>
+<li><b>Bapor Tabo:</b> Lipunang mabagal umusad at hindi pantay.</li>
+<li><b>Lampara:</b> Nakatagong panganib at mapanirang paghihiganti.</li>
+<li><b>Akademya ng Wikang Kastila:</b> Paghahangad ng edukasyon at pantay na pagkakataon.</li>
+<li><b>Kayamanan ni Simoun:</b> Kapangyarihan at yaman na maaaring gamitin sa mabuti o masamang layunin.</li>
+<li><b>Mga mag-aaral:</b> Pag-asa ng pagbabago at paghahangad ng karapatan.</li>
+</ul>
+</div>
+</details>
+
+<details class="lesson">
+<summary>11. Mga Pangunahing Tema at Aral</summary>
+<div class="lesson-content">
+<ul>
+<li><b>Kawalang-katarungan:</b> Ang hindi patas na pagtrato ay nagdudulot ng paghihirap at galit.</li>
+<li><b>Abuso sa kapangyarihan:</b> Ang kapangyarihan ay maaaring gamitin upang mang-api.</li>
+<li><b>Edukasyon:</b> Mahalaga ang kaalaman sa pag-unlad ng tao at lipunan.</li>
+<li><b>Paghihiganti:</b> Ang galit ay maaaring magtulak sa maling pagpapasya.</li>
+<li><b>Kalayaan:</b> Hindi sapat ang pagbabago sa pangalan o pinuno; kailangan din ang katarungan at pananagutan.</li>
+<li><b>Pagmamahal sa bayan:</b> Kailangang samahan ng makabuluhang layunin at wastong pagkilos.</li>
+</ul>
+</div>
+</details>
+
+</section>
+
+<!-- QUIZ GRADE 9 -->
+<section class="section" id="quiz9">
+<h2>📝 GRADE 9 — ADVANCED QUIZ</h2>
+<div class="quiz-intro">
+<b>20 Questions | Advanced Difficulty</b>
+<p>Subukan ang iyong pag-unawa sa panitikan, wika, at pagsusuri. Piliin ang pinakamahusay na sagot. Mag-ingat: magkakalapit ang ilang pagpipilian!</p>
+</div>
+<div id="quiz9Questions"></div>
+<button onclick="checkQuiz('quiz9')">Submit Grade 9 Quiz</button>
+<div id="quiz9Result"></div>
+</section>
+
+<!-- QUIZ GRADE 10 -->
+<section class="section" id="quiz10">
+<h2>📖 GRADE 10 — EL FILIBUSTERISMO ADVANCED QUIZ</h2>
+<div class="quiz-intro">
+<b>20 Questions | Advanced Difficulty</b>
+<p>Subukan ang iyong kakayahan sa pagsusuri ng tauhan, simbolismo, pangyayari, at mensahe ng nobela.</p>
+</div>
+<div id="quiz10Questions"></div>
+<button onclick="checkQuiz('quiz10')">Submit Grade 10 Quiz</button>
+<div id="quiz10Result"></div>
+</section>
+
+<a class="backtop" href="#top">↑ Bumalik sa Itaas</a>
+
+</main>
+
+<footer>
+  <p><b>Concepcion Integrated School - Secondary Level</b></p>
+  <p>Made by Angel De Guzman Tictic │ 10-Patient</p>
+  <p>Filipino Reviewer | Grade 9 & Grade 10</p>
+  <p><i>Patuloy na matuto. Patuloy na mangarap.</i></p>
+</footer>
+
+<script>
+const quizzes = {
+quiz9: [
+{
+q:"1. Isang tauhan ang patuloy na lumalaban sa kabila ng sunod-sunod na kabiguan. Anong katangian ang higit na ipinakikita niya?",
+c:["Pagiging mapagmataas","Katapangan at katatagan","Pagiging mapaghiganti","Pagiging makasarili"],
+a:1,e:"Ang patuloy na pakikipaglaban sa kabila ng pagsubok ay nagpapakita ng katapangan at katatagan."
+},
+{
+q:"2. Kung ang isang kuwento ay nagpapakita ng suliraning panlipunan sa pamamagitan ng karanasan ng isang pamilya, ano ang pangunahing layunin nito?",
+c:["Magbigay lamang ng aliw","Ipakita ang epekto ng lipunan sa buhay ng tao","Ipakilala ang lahat ng tauhan","Maglahad ng kathang-isip na lugar"],
+a:1,e:"Maaaring gamitin ang karanasan ng isang pamilya upang ipakita ang mas malawak na suliraning panlipunan."
+},
+{
+q:"3. Alin ang pinakamabisang paraan upang matukoy ang tema ng isang akda?",
+c:["Pagbilang sa mga tauhan","Pagtingin lamang sa pamagat","Pagsusuri sa kabuuang pangyayari at mensahe","Pag-alala sa unang pangungusap"],
+a:2,e:"Natutukoy ang tema sa pamamagitan ng pagsusuri sa kabuuang daloy, tunggalian, at mensahe ng akda."
+},
+{
+q:"4. Sinabi ng tauhan na, 'Ang kaniyang mga salita ay kutsilyong tumatagos sa aking damdamin.' Anong tayutay ang ginamit?",
+c:["Pagtutulad","Pagwawangis","Pagsasatao","Pagmamalabis"],
+a:1,e:"Tuwirang inihambing ang mga salita sa kutsilyo nang hindi gumagamit ng tulad o parang."
+},
+{
+q:"5. Alin ang nagpapakita ng ironiyang dramatiko?",
+c:["Hindi alam ng mambabasa ang lihim ng tauhan","Alam ng mambabasa ang panganib ngunit hindi ito alam ng tauhan","Magkapareho ang kaalaman ng lahat","Walang suliranin sa kuwento"],
+a:1,e:"Nangyayari ang dramatic irony kapag higit na may alam ang mambabasa kaysa sa tauhan."
+},
+{
+q:"6. Bakit mahalagang suriin ang tagpuan sa isang akda?",
+c:["Dahil ito ang laging pangunahing tauhan","Dahil nakatutulong ito sa pag-unawa sa kilos at suliranin ng mga tauhan","Dahil ito ang nagtatakda ng haba ng kuwento","Dahil ito ang kapalit ng banghay"],
+a:1,e:"Ang panahon at lugar ay maaaring makaapekto sa kilos, desisyon, at suliranin ng mga tauhan."
+},
+{
+q:"7. Alin ang pinakamainam na halimbawa ng sanhi at bunga?",
+c:["Nag-aral siya at nagbasa ng aklat","Dahil sa matinding tagtuyot, bumaba ang ani ng mga magsasaka","Mataas ang gusali at malawak ang paaralan","Masaya ang mga bata habang naglalaro"],
+a:1,e:"Ang tagtuyot ang sanhi at ang pagbaba ng ani ang bunga."
+},
+{
+q:"8. Kung ang isang tula ay gumagamit ng kalikasan upang ipahayag ang kalungkutan, ano ang dapat suriin?",
+c:["Bilang lamang ng saknong","Ugnayan ng mga larawang-diwa at damdaming ipinahahayag","Pangalan ng makata lamang","Haba ng bawat salita"],
+a:1,e:"Ang mga larawan ng kalikasan ay maaaring magsilbing simbolo ng damdamin."
+},
+{
+q:"9. Alin ang nagpapakita ng wastong pangangatwiran?",
+c:["Pagsasabi ng opinyon nang walang batayan","Paggamit ng personal na paniniwala bilang tanging patunay","Pagbibigay ng malinaw na pahayag at mapagkakatiwalaang ebidensiya","Pagsang-ayon sa lahat ng sinasabi ng iba"],
+a:2,e:"Ang matibay na pangangatwiran ay may malinaw na paninindigan at sapat na ebidensiya."
+},
+{
+q:"10. Ano ang pangunahing kaibahan ng nobela sa maikling kuwento?",
+c:["Laging may aral ang nobela","Mas malawak ang paglinang ng nobela sa mga tauhan at pangyayari","Walang tunggalian ang nobela","Hindi gumagamit ng tagpuan ang maikling kuwento"],
+a:1,e:"Karaniwang mas mahaba at mas masalimuot ang nobela, kaya mas malawak ang paglinang sa mga elemento nito."
+},
+{
+q:"11. Sa pagsusuri ng isang tauhan, alin ang pinakamabisang batayan upang makilala ang kaniyang tunay na pagkatao?",
+c:["Kaniyang panlabas na anyo","Kaniyang sinabi lamang","Kaniyang kilos, desisyon, at pakikitungo sa iba","Kaniyang pangalan"],
+a:2,e:"Mas nakikita ang pagkatao sa mga kilos at desisyon, lalo na kapag nahaharap sa suliranin."
+},
+{
+q:"12. Alin ang pinakamainam na paglalarawan sa simbolismo?",
+c:["Paggamit ng bagay upang kumatawan sa mas malalim na ideya","Pagbibigay ng pangalan sa tauhan","Pagsasaayos ng mga pangyayari ayon sa oras","Pag-uulit ng tunog sa tula"],
+a:0,e:"Ang simbolismo ay paggamit ng isang bagay, tauhan, o pangyayari upang kumatawan sa mas malalim na kahulugan."
+},
+{
+q:"13. Kung ang wakas ng kuwento ay hindi nagbibigay ng tiyak na kasagutan, anong uri ng wakas ito?",
+c:["Masayang wakas","Malungkot na wakas","Bukas na wakas","Payak na wakas"],
+a:2,e:"Ang bukas na wakas ay nag-iiwan ng tanong o pagkakataon para sa sariling interpretasyon ng mambabasa."
+},
+{
+q:"14. Alin ang nagpapakita ng mabisang paggamit ng pang-ugnay?",
+c:["Hindi siya pumasok ngunit may sakit siya","Hindi siya pumasok dahil may sakit siya","Hindi siya pumasok samantala may sakit siya","Hindi siya pumasok subalit dahil may sakit siya"],
+a:1,e:"Ang 'dahil' ay wastong nag-uugnay sa dahilan ng hindi pagpasok."
+},
+{
+q:"15. Bakit mahalagang malaman ang konteksto ng panahong pinagmulan ng isang akda?",
+c:["Upang malaman lamang ang edad ng may-akda","Upang maunawaan ang mga ideya at suliraning nakaimpluwensiya sa akda","Upang hindi na basahin ang akda","Upang matukoy ang bilang ng pahina"],
+a:1,e:"Ang kontekstong pangkasaysayan at panlipunan ay nakatutulong sa mas malalim na interpretasyon."
+},
+{
+q:"16. Alin ang halimbawa ng personipikasyon?",
+c:["Singbilis siya ng hangin","Sumasayaw ang mga dahon sa ihip ng hangin","Bato ang kaniyang puso","Umiyak siya nang isang dagat"],
+a:1,e:"Binigyan ng kilos ng tao ang mga dahon."
+},
+{
+q:"17. Isang tauhan ang nagsakripisyo para sa kapakanan ng nakararami. Anong pagpapahalaga ang nangingibabaw?",
+c:["Pagiging makasarili","Pagkamakabayan o pagmamalasakit sa kapwa","Pagiging mapagmataas","Pagiging mapaghiganti"],
+a:1,e:"Ang pagsasakripisyo para sa iba ay nagpapakita ng malasakit at pagpapahalaga sa kapakanan ng nakararami."
+},
+{
+q:"18. Ano ang dapat gawin kapag magkaiba ang interpretasyon ng dalawang mambabasa sa isang akda?",
+c:["Piliin ang interpretasyon ng mas nakatatanda","Suriin ang tekstuwal na ebidensiya para sa bawat interpretasyon","Ipilit ang sariling opinyon","Iwasang pag-usapan ang akda"],
+a:1,e:"Dapat suportado ng mga detalye sa akda ang isang interpretasyon."
+},
+{
+q:"19. Alin ang pinakamabisang paraan upang makilala ang pangunahing tunggalian?",
+c:["Hanapin ang pinakamahabang talata","Tukuyin ang pinakamahalagang suliraning humahadlang sa layunin ng pangunahing tauhan","Bilangin ang mga tauhan","Tingnan lamang ang wakas"],
+a:1,e:"Ang tunggalian ay ang pangunahing suliraning kinakaharap ng tauhan."
+},
+{
+q:"20. Ano ang pinakamahalagang katangian ng isang mahusay na pagsusuri ng panitikan?",
+c:["Maraming malalalim na salita","Mahabang pagpapakilala sa may-akda","May malinaw na interpretasyon at ebidensiya mula sa akda","Pagsasalaysay muli ng buong kuwento"],
+a:2,e:"Ang mahusay na pagsusuri ay nagpapaliwanag ng kahulugan at sumusuporta rito gamit ang detalye mula sa akda."
+}
+],
+
+quiz10: [
+{
+q:"1. Bakit mahalaga ang Bapor Tabo sa simula ng El Filibusterismo?",
+c:["Sumisimbolo ito sa mabilis na pag-unlad ng bansa","Sumasagisag ito sa lipunang mabagal umusad at pinamamahalaan ng makapangyarihan","Nagpapakita ito ng pagkakaisa ng mga Pilipino","Kumakatawan ito sa kalayaan ng bayan"],
+a:1,e:"Ang Bapor Tabo ay sumasagisag sa mabagal at hindi pantay na lipunan sa ilalim ng kolonyal na pamamahala."
+},
+{
+q:"2. Ano ang pinakamalalim na dahilan ng pagbabago ni Simoun mula sa dating pagkatao niya bilang Crisostomo Ibarra?",
+c:["Ninais niyang yumaman","Nawalan siya ng interes sa edukasyon","Ang mga karanasan ng pang-aapi at kabiguan ay nagtulak sa kaniya sa paghihiganti","Nais niyang maging pinuno ng pamahalaan"],
+a:2,e:"Ang mga sinapit niya at ang kawalan ng katarungan ay nagtulak sa kaniya na maghiganti."
+},
+{
+q:"3. Bakit hindi simpleng maituturing na bayani si Simoun?",
+c:["Dahil hindi siya mayaman","Dahil ang kaniyang layunin ay nahaluan ng paghihiganti at karahasan","Dahil wala siyang alam sa lipunan","Dahil ayaw niyang tumulong sa mga Pilipino"],
+a:1,e:"Kahit nais niyang baguhin ang sistema, ang kaniyang pamamaraan ay nakabatay sa paghihiganti at kapahamakan."
+},
+{
+q:"4. Ano ang ipinakikita ng Akademya ng Wikang Kastila tungkol sa kalagayan ng mga mag-aaral?",
+c:["Pantay-pantay ang pagkakataon ng lahat","Ang edukasyon ay malaya sa impluwensiya ng pamahalaan","May mga hadlang sa pag-aaral at pagkamit ng pantay na karapatan","Walang interes ang mga mag-aaral sa sariling wika"],
+a:2,e:"Ipinakikita ng usapin ng akademya ang diskriminasyon at mga hadlang sa edukasyon."
+},
+{
+q:"5. Bakit mahalaga ang papel ni Basilio sa nobela?",
+c:["Siya ang kumakatawan sa taong naghangad ng tahimik na kinabukasan ngunit naapektuhan ng kawalang-katarungan","Siya ang pangunahing pinuno ng mga prayle","Siya ang nagtatag ng pamahalaan","Siya ang may-ari ng Bapor Tabo"],
+a:0,e:"Ang kaniyang karanasan ay nagpapakita kung paano naaapektuhan ng pang-aapi ang pangarap at kinabukasan ng isang tao."
+},
+{
+q:"6. Ano ang ipinahihiwatig ng lamparang ginamit ni Simoun?",
+c:["Kapayapaan at pagkakasundo","Yaman at kasaganaan","Nakatagong panganib at mapanirang paghihiganti","Pag-asa sa edukasyon"],
+a:2,e:"Ang lampara ay mahalagang bahagi ng planong paghihiganti ni Simoun at sumasagisag sa nakatagong panganib."
+},
+{
+q:"7. Bakit mahalaga ang karakter ni Isagani sa usapin ng lampara?",
+c:["Dahil siya ang gumawa nito","Dahil ang kaniyang ginawa ay nakapigil sa planong magdulot ng malawakang kapahamakan","Dahil siya ang nagbigay nito kay Simoun","Dahil siya ang nag-utos sa mga mag-aaral"],
+a:1,e:"Nagawa niyang pigilan ang pagsabog at ang kapahamakang maaaring idulot nito."
+},
+{
+q:"8. Ano ang pangunahing pagkakaiba ng paninindigan nina Simoun at Basilio?",
+c:["Pareho silang nais gumamit ng paghihiganti","Si Simoun ay nagtutulak ng marahas na paghihiganti samantalang si Basilio ay naghangad muna ng mapayapang kinabukasan","Si Basilio ay nais maging prayle","Si Simoun ay walang pakialam sa lipunan"],
+a:1,e:"Magkaiba ang kanilang naging tugon sa pang-aapi at sa posibilidad ng pagbabago."
+},
+{
+q:"9. Ano ang ipinakikita ng sinapit ni Kabesang Tales?",
+c:["Laging nagtatagumpay ang mga magsasaka","Ang pang-aabuso sa kapangyarihan ay maaaring magbunga ng kawalan ng tiwala at paghihimagsik","Walang epekto ang pag-aari ng lupa sa lipunan","Hindi mahalaga ang katarungan sa kanayunan"],
+a:1,e:"Ipinakikita ng kaniyang karanasan ang kawalang-katarungan at pang-aabuso sa mga magsasaka."
+},
+{
+q:"10. Bakit mahalaga ang papel ni Juli sa nobela?",
+c:["Siya ay kumakatawan sa mga taong napipilitang gumawa ng mahihirap na pasiya dahil sa kahirapan at pang-aapi","Siya ang namuno sa mga prayle","Siya ang nagplano ng lampara","Siya ang may-ari ng akademya"],
+a:0,e:"Ang kaniyang karanasan ay nagpapakita ng kalagayan ng kababaihan at mahihirap sa mapang-aping lipunan."
+},
+{
+q:"11. Ano ang ipinakikita ng mga pagtatalo ng mga mag-aaral tungkol sa akademya?",
+c:["Walang interes ang kabataan sa pagbabago","May kamalayan ang kabataan sa kanilang karapatan ngunit nahaharap sila sa kapangyarihan ng mga nasa posisyon","Lahat ng mag-aaral ay sumasang-ayon sa pamahalaan","Hindi mahalaga ang edukasyon sa nobela"],
+a:1,e:"Ang kanilang pagkilos ay nagpapakita ng pagnanais para sa edukasyon at pagkilala sa kanilang mga karapatan."
+},
+{
+q:"12. Bakit hindi nagtagumpay ang plano ni Simoun?",
+c:["Walang nakakaalam sa kaniyang pagkatao","May mga pangyayaring sumalungat sa kaniyang plano at hindi natupad ang inaasahan niyang paghihiganti","Nagbago ang isip ng lahat ng tauhan","Nawala ang Bapor Tabo"],
+a:1,e:"Nabigo ang kaniyang plano dahil sa mga pangyayaring hindi niya lubos na nakontrol."
+},
+{
+q:"13. Ano ang maaaring ipakahulugan sa pamagat na El Filibusterismo?",
+c:["Pagdiriwang ng kapayapaan","Paglalarawan sa isang lipunang may mga usapin ng paghihimagsik at pagbabago","Kuwento tungkol sa paglalakbay","Pag-aaral tungkol sa kalikasan"],
+a:1,e:"Ang pamagat ay kaugnay ng mga ideya ng paghihimagsik at mga taong itinuturing na banta sa umiiral na kapangyarihan."
+},
+{
+q:"14. Bakit mahalaga ang papel ni Padre Florentino sa wakas ng nobela?",
+c:["Siya ang nagpatuloy sa plano ni Simoun","Siya ang nagbigay ng pagninilay tungkol sa tunay na kalayaan at wastong layunin","Siya ang nagtatag ng akademya","Siya ang nag-utos sa mga mag-aaral na maghimagsik"],
+a:1,e:"Sa kaniyang mga pahayag, binibigyang-diin ang kahalagahan ng malinis na layunin at tunay na paglilingkod sa bayan."
+},
+{
+q:"15. Ano ang ipinahihiwatig ng pagtatapon ni Padre Florentino sa kayamanan ni Simoun?",
+c:["Walang halaga ang lahat ng kayamanan","Hindi dapat gamitin ang yaman upang isulong ang kasakiman at mapanirang layunin","Dapat itago ang lahat ng yaman","Mas mahalaga ang salapi kaysa kalayaan"],
+a:1,e:"Ipinahihiwatig nito na ang yaman na nagmula sa maling layunin ay hindi dapat maging kasangkapan ng kasamaan."
+},
+{
+q:"16. Ano ang pinakamalalim na ugnayan ng Noli Me Tangere at El Filibusterismo?",
+c:["Magkaiba ang lahat ng tauhan at suliranin","Ang ikalawang nobela ay nagpapatuloy at nagpapalalim sa mga suliraning panlipunang ipinakita sa una","Pareho silang nagtatapos sa kasal","Pareho silang nakatuon lamang sa pag-iibigan"],
+a:1,e:"Ang El Filibusterismo ay karugtong ng Noli Me Tangere at nagpapakita ng mas madilim na bunga ng kawalang-katarungan."
+},
+{
+q:"17. Kung ang isang tao ay gumagamit ng maling paraan upang makamit ang mabuting layunin, anong suliraning moral ang ipinakikita nito?",
+c:["Hindi mahalaga ang layunin","Maaaring hindi maging makatarungan ang paraan kahit mabuti ang ipinapahayag na layunin","Lahat ng paraan ay katanggap-tanggap","Walang ugnayan ang paraan at layunin"],
+a:1,e:"Ipinakikita ng nobela na mahalagang suriin hindi lamang ang layunin kundi pati ang paraang ginagamit upang makamit ito."
+},
+{
+q:"18. Ano ang ipinakikita ng paglalarawan sa mga makapangyarihang tauhan sa nobela?",
+c:["Lahat ng may kapangyarihan ay makatarungan","Maaaring abusuhin ang kapangyarihan kapag walang pananagutan","Hindi naaapektuhan ng kapangyarihan ang lipunan","Laging patas ang mga institusyon"],
+a:1,e:"Ipinakikita ng nobela kung paano nagagamit ang kapangyarihan upang mang-api at magpanatili ng hindi makatarungang sistema."
+},
+{
+q:"19. Alin ang pinakamainam na pagsusuri sa paggamit ni Rizal ng simbolismo sa nobela?",
+c:["Ginagamit lamang ito upang pagandahin ang mga pangungusap","Nagbibigay ito ng mas malalim na kahulugan sa mga suliraning panlipunan at pampolitika","Pinapalitan nito ang lahat ng tauhan","Wala itong kaugnayan sa pangunahing mensahe"],
+a:1,e:"Ang mga simbolo ay nagpapalalim sa pag-unawa sa kalagayan ng lipunan at sa mga ideya ng nobela."
+},
+{
+q:"20. Alin ang pinakamabisang paglalahat sa mensahe ng El Filibusterismo?",
+c:["Ang paghihiganti ang tanging paraan upang makamit ang pagbabago","Ang pagbabago ay nangangailangan ng katarungan, pananagutan, at makabuluhang layunin","Dapat iwasan ang edukasyon","Hindi kailangang makialam ang mamamayan sa lipunan"],
+a:1,e:"Binibigyang-diin ng nobela ang mga panganib ng pang-aapi at ang kahalagahan ng makatarungang pagbabago."
+}
+]
+};
+
+function renderQuiz(id) {
+  const container = document.getElementById(id + "Questions");
+  container.innerHTML = "";
+
+  quizzes[id].forEach((item,index) => {
+    const div = document.createElement("div");
+    div.className = "question";
+    div.id = id + "q" + index;
+
+    const title = document.createElement("p");
+    const bold = document.createElement("b");
+    bold.textContent = item.q;
+    title.appendChild(bold);
+    div.appendChild(title);
+
+    item.c.forEach((choice,i) => {
+      const label = document.createElement("label");
+      const input = document.createElement("input");
+      input.type = "radio";
+      input.name = id + "_" + index;
+      input.value = i;
+
+      label.appendChild(input);
+      label.appendChild(document.createTextNode(
+        String.fromCharCode(65+i) + ". " + choice
+      ));
+      div.appendChild(label);
+    });
+
+    container.appendChild(div);
+  });
+}
+
+function checkQuiz(id) {
+  const questions = quizzes[id];
+  let score = 0;
+  let answered = 0;
+  let review = "";
+
+  questions.forEach((item,index) => {
+    const selected = document.querySelector(
+      `input[name="${id}_${index}"]:checked`
+    );
+
+    const userAnswer = selected ? Number(selected.value) : -1;
+    const correct = userAnswer === item.a;
+
+    if(selected) answered++;
+    if(correct) score++;
+
+    const userText = userAnswer === -1
+      ? "Hindi nasagutan"
+      : String.fromCharCode(65+userAnswer) + ". " + item.c[userAnswer];
+
+    const correctText =
+      String.fromCharCode(65+item.a) + ". " + item.c[item.a];
+
+    review += `
+      <div class="review-item ${correct ? "correct" : ""}">
+        <p class="status ${correct ? "correct-text" : "wrong-text"}">
+          ${correct ? "✓ CORRECT" : userAnswer === -1 ? "— UNANSWERED" : "✗ INCORRECT"}
+        </p>
+        <p><b>${item.q}</b></p>
+        <p><b>Your answer:</b> ${userText}</p>
+        <p><b>Correct answer:</b> ${correctText}</p>
+        <p><b>Explanation:</b> ${item.e}</p>
+      </div>
+    `;
+  });
+
+  const percent = Math.round(score / questions.length * 100);
+  let remark = "";
+
+  if(percent >= 90) {
+    remark = "Outstanding! Napakahusay ng iyong pag-unawa!";
+  } else if(percent >= 80) {
+    remark = "Very Good! Malakas ang iyong pundasyon.";
+  } else if(percent >= 70) {
+    remark = "Good effort! May ilang konsepto pang dapat balikan.";
+  } else if(percent >= 60) {
+    remark = "Keep practicing! Balikan ang mga aralin.";
+  } else {
+    remark = "Huwag panghinaan ng loob. Gamitin ang explanations upang matuto.";
+  }
+
+  const result = document.getElementById(id + "Result");
+
+  result.innerHTML = `
+    <div class="result-box">
+      <h3>📊 QUIZ RESULTS</h3>
+      <h2>${score} / ${questions.length}</h2>
+      <h3 style="text-align:center">${percent}%</h3>
+      <p style="text-align:center"><b>${remark}</b></p>
+      <p style="text-align:center">Nasagutan: ${answered} / ${questions.length}</p>
+      <hr>
+      <h3>📝 Answer Review</h3>
+      <p>Makikita sa ibaba ang bawat tanong, ang iyong sagot, ang tamang sagot, at paliwanag.</p>
+      ${review}
+      <button onclick="retakeQuiz('${id}')">↻ Retake Quiz</button>
+    </div>
+  `;
+
+  result.scrollIntoView({behavior:"smooth",block:"start"});
+}
+
+function retakeQuiz(id) {
+  renderQuiz(id);
+  document.getElementById(id + "Result").innerHTML = "";
+  document.getElementById(id + "Questions").scrollIntoView({
+    behavior:"smooth",
+    block:"start"
+  });
+}
+
+/* SEARCH FUNCTION */
+document.getElementById("search").addEventListener("input",function() {
+  const query = this.value.toLowerCase().trim();
+
+  document.querySelectorAll(".lesson").forEach(lesson => {
+    const matches = lesson.innerText.toLowerCase().includes(query);
+    lesson.classList.toggle("hidden",!matches);
+
+    if(query && matches) {
+      lesson.open = true;
+    } else if(!query) {
+      lesson.open = false;
+    }
+  });
+
+  document.querySelectorAll(".quarter-title").forEach(title => {
+    let next = title.nextElementSibling;
+    let hasVisibleLesson = false;
+
+    while(next && !next.classList.contains("quarter-title")) {
+      if(next.classList.contains("lesson") && !next.classList.contains("hidden")) {
+        hasVisibleLesson = true;
+      }
+      next = next.nextElementSibling;
+    }
+
+    title.classList.toggle("hidden",query !== "" && !hasVisibleLesson);
+  });
+});
+
+renderQuiz("quiz9");
+renderQuiz("quiz10");
+</script>
+
+</body>
+</html>
